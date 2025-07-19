@@ -1,0 +1,14 @@
+name = "Cpon"
+grammar = "cpon"
+path_suffixes = ["cpon"]
+line_comments = ["// "]
+block_comments = { start = "/*", end = "*/", close = true, newline = false, not_in = [ "comment", "string", ] }
+autoclose_before = ";:.,=}])"
+brackets = [
+    { start = "<", end = ">", close = true, newline = true },
+    { start = "{", end = "}", close = true, newline = true },
+    { start = "[", end = "]", close = true, newline = true },
+    { start = "(", end = ")", close = true, newline = true },
+    { start = "/*", end = "*/", close = true, newline = false, not_in = [ "comment", "string", ] },
+    { start = "\"", end = "\"", close = true, newline = false, not_in = [ "comment", "string", ] },
+]

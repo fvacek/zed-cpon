@@ -1,0 +1,12 @@
+id = "cpon"
+name = "Cpon"
+version = "0.0.1"
+schema_version = 1
+authors = ["Fanda <fanda.vacek@gmail.com>"]
+description = "Cpon support."
+repository = "https://github.com/fvacek/zed-cpon"
+# languages = ["languages/cpon"]
+
+[grammars.cpon]
+repository = "https://github.com/tree-sitter-grammars/tree-sitter-cpon.git"
+commit = "master"
